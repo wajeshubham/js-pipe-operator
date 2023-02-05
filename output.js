@@ -13,11 +13,12 @@ const subtract3 = num => num - 3;
 // add = s + 5
 // mul = s * 2
 
-const inputNum = 20;
-const result = multiplyBy2(add5(subtract3(20)));
+const inputNumber = 20;
+const result = multiplyBy2(add5(subtract3(inputNumber)));
 console.log("Functional result: ", result); // Functional result: 44
 
-const pipeResult = multiplyBy2(add5(subtract3(20)));
+const pipeResult = multiplyBy2(add5(subtract3(inputNumber)));
+
 // 20 --> subtract3(20) --> add5(17) --> multiplyBy2(22) --> 44
 
 // % is called `topicToken` which you need to configure in .babelrc file
